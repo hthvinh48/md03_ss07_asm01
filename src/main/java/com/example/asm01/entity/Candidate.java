@@ -22,6 +22,11 @@ public class Candidate {
     @Column(nullable = false)
     private Integer yearsOfExperience;
 
+    private String address;
+
+    @Column(length = 200)
+    private String bio;
+
     public Candidate() {
     }
 
@@ -70,5 +75,21 @@ public class Candidate {
 
     public void setYearsOfExperience(Integer yearsOfExperience) {
         this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }
